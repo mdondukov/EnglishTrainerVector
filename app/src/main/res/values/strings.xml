@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">English Trainer</string>
+    <string name="info_text_variants">Выберите правильный перевод</string>
+    <string name="current_level">%1$d/%2$d</string>
+    <string name="continue_btn">Продолжить</string>
+    <string name="correct">Отлично! +2</string>
+    <string name="incorrect">Неправильный перевод</string>
+    <string name="current_score">счет: %1$d</string>
+    <string name="game_result">Всего правильных ответов: %1$d из %2$d</string>
+    <string name="results">Результаты</string>
+    <string name="challenge">Новая игра</string>
+    <string name="game">Игра</string>
+    <string name="description">Простая игра по запоминанию английских слов. Правильный ответ +2 балла, неправильный -1 балл.</string>
+    <string name="clear_results">Удалить результаты</string>
+</resources>

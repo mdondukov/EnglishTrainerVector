@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="space_16">16dp</dimen>
+    <dimen name="space_24">24dp</dimen>
+    <dimen name="btn_refresh_size">44dp</dimen>
+    <dimen name="progress_width">200dp</dimen>
+    <dimen name="progress_height">6dp</dimen>
+    <dimen name="btn_radius">24dp</dimen>
+    <dimen name="chip_height">40dp</dimen>
+    <dimen name="text_lg">18sp</dimen>
+    <dimen name="text_xl">22sp</dimen>
+    <dimen name="text_xxl">24sp</dimen>
+    <dimen name="space_12">12dp</dimen>
+    <dimen name="space_4">4dp</dimen>
+    <dimen name="btn_width">180dp</dimen>
+    <dimen name="space_32">32dp</dimen>
+</resources>
