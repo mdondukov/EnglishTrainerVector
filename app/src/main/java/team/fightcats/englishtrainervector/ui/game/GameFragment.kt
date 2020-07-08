@@ -39,19 +39,19 @@ class GameFragment : Fragment(),
         navController = Navigation.findNavController(view)
 
         gameViewModel = ViewModelProvider(this).get(GameViewModel::class.java)
-        if (savedInstanceState == null) {
-            gameViewModel.getScore()
-            gameViewModel.getDataState().observe(viewLifecycleOwner, Observer { state ->
-                when (state) {
-                    State.LOADING -> loader.visibility = View.VISIBLE
-                    State.DONE -> {
+        gameViewModel.getDataState().observe(viewLifecycleOwner, Observer { state ->
+            when (state) {
+                State.LOADING -> loader.visibility = View.VISIBLE
+                State.DONE -> {
+                    if (savedInstanceState == null) {
                         gameViewModel.getQuestion()
-                        loader.visibility = View.GONE
+                        gameViewModel.getScore()
                     }
-                    else -> loader.visibility = View.VISIBLE
+                    loader.visibility = View.GONE
                 }
-            })
-        }
+                else -> loader.visibility = View.GONE
+            }
+        })
         gameViewModel.question.observe(viewLifecycleOwner, Observer { showQuestion(it) })
         gameViewModel.gameScore.observe(viewLifecycleOwner, Observer { showScore(it) })
         gameViewModel.currentQuestion.observe(viewLifecycleOwner, Observer { showProgress(it) })
